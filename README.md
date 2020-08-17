@@ -23,5 +23,7 @@ The analysis of the elections show that:
   - Charles Cooper Stock received 23.8% of the vote and 85,213 number of votes 
   - Diana Regette received 73.8% of the votes and 272,892 number of votes
   - Ray Antony Doane received 3.1% of the votes and 11,606 number of votes
+- The winner of the election was:
+  - Diana Regette, who received 73.8% of the votes and 272,892 number of votes 
 
 ## Challlenges

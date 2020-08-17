@@ -2,7 +2,7 @@
 """PyPoll Homework Challenge Solution."""
 
 # Add our dependencies.
-import csv
+import csv  
 import os
 
 # Add a variable to load a file from a path.
@@ -27,8 +27,8 @@ winning_count = 0
 winning_percentage = 0
 
 # 2: Track the largest county and county voter turnout.
-
-
+largest_county = ""
+county_turnout = 0
 
 # Read the csv and convert it into a list of dictionaries
 with open(file_to_load) as election_data:
