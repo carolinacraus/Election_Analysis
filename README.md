@@ -13,6 +13,7 @@ The main purpose was to use Python to analyze a CSV files of election results an
 - Software: Python 3.7, Visual Studio Code 1.48 
 
 ## Summary 
+### Election-Audit Results 
 The analysis of the elections show that: 
 - There were 369,711 votes cast in the election 
 - The candidates were:
@@ -25,5 +26,12 @@ The analysis of the elections show that:
   - Ray Antony Doane received 3.1% of the votes and 11,606 number of votes
 - The winner of the election was:
   - Diana Regette, who received 73.8% of the votes and 272,892 number of votes 
+- The voter turnout for each county showed: 
+  - The voter turnout for Jefferson was 10.5%% which was 38,855 votes 
+  - The voter turnout for Denver was 82.8% which was 85,213 votes
+  - The voter turnout for Arapahoe was 6.7% which was 85,213 votes which was 24,801 
+- The county with the largest number of votes:
+  -  Denver with 82%, which was 85,213 votes 
+
 
 ## Challlenges
