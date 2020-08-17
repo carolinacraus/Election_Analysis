@@ -79,6 +79,9 @@ with open(file_save, "w") as txt_file:
         f"\nElection Results\n"
         f"-------------------------\n"
         f"Total Votes: {total_votes:,}\n"
+        f"\n-------------------------"  
+        f"Largest County Turnout: {largest_county}"
+        f"-------------------------\n"
         f"-------------------------\n\n"
         f"County Votes:\n")
     print(election_results, end="")
@@ -108,7 +111,12 @@ with open(file_save, "w") as txt_file:
           f"Largest County Turnout: {largest_county}"
           f"-------------------------\n"
         )
-       
+        print(largest_county)
+        largest_county_turnout = (
+            f"\n-------------------------\n"
+            f"Largest County Turnout: "
+        )
+
 
       
     # determine percentage of votes for each candidate by looping through counts
