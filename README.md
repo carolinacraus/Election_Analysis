@@ -32,6 +32,8 @@ The analysis of the elections show that:
   - The voter turnout for Arapahoe was 6.7% which was 85,213 votes which was 24,801 
 - The county with the largest number of votes:
   -  Denver with 82%, which was 85,213 votes 
-
+## Election Audit Summary 
+This scipt can be used by the election committee to explore the voter turnouts by county as number and as well as a percentage of the total. In addition, this script can be used to determine the number of votes each candidate received as number as well as percentage and it will determine the winner of the election. This script could be used for a number of different reasons including other elections with different candidates as well as to determine census-type information or information about winners in certain competitions around counties in a country. It could developed even further to include all countries and their counties as well. 
 
 ## Challlenges
+One of the major challenges I encountered is trying to get all the results formatted at the end. I was not able to figure out where I was going wrong in printing out the Winner portion at the end. I could get it to work by itself and then it stopped. All the calculations seem correct so I will continue to work on finding where the issue is. I think my main challenge so far has been debugging. 
