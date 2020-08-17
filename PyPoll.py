@@ -72,25 +72,20 @@ with open(file_load) as election_data:
     # print each candidate's voter count and percentage to terminal
     print(county_votes)
 
-# save results to a text file        
-with open(file_save, "w") as txt_file: 
-    # print the final vote count 
+# Print the final vote count (to terminal)
     election_results = (
         f"\nElection Results\n"
         f"-------------------------\n"
-        f"Total Votes: {total_votes:,}"
-        f"\n-------------------------"  
-        f"\nLargest County Turnout: {largest_county}"
-        f"\n-------------------------\n") 
-       
+        f"Total Votes: {total_votes:,}\n"
+        f"-------------------------\n\n"
+        f"County Votes:\n")
     print(election_results, end="")
-    # save final vote count to text file 
-    txt_file.write(election_results)
 
+    txt_file.write(election_results)
     # write a repetition statement to get the county from the county votes dictionary
     for county_name in county_votes: 
         # retrieve the vote count 
-        votes= county_votes[county_name]
+        votes= county_votes[0]
         # calculate percent of total votes for the county 
     
         vote_percent = float(votes) / float(total_votes) * 100 
@@ -106,7 +101,6 @@ with open(file_save, "w") as txt_file:
         if (votes> winning_count) and (vote_percent > winning_percentage):
             winning_count = votes
             largest_county = county_name
-        print(winning_count)
     
 
       
@@ -128,15 +122,16 @@ with open(file_save, "w") as txt_file:
 
         # determine winning count and candidate 
         # determine if votes is greater than the winning count 
-    if (votes > winning_count) and (vote_percentage > winning_percentage):
-            # if true, winning_count = votes  & winning_percentage = votes_percentage 
-        winning_count = votes
-        winning_candidate = candidate_name
-        winning_percentage = vote_percentage
+        if (candidate_results[1]> winning_count) and (vote_percentage > winning_percentage):
+            winning_count = votes
+            winning_candidate = candidate_votes[0] 
+            winning_percentage = vote_percentage
+
 
             # set winning candidate wo candidate name 
         print(winning_candidate)
    
+
     # determine winning vote count
     # print winning candididates to terminal 
     winning_candidate_summary = (
@@ -151,18 +146,11 @@ with open(file_save, "w") as txt_file:
     txt_file.write(winning_candidate_summary)
 
 
-  
-        
-
-#print(total_votes)
-#print(candidate_options)
-#print(candidate_votes) 
-
-
 # 2. A complete list of candidates who received votes
 # 3. The percentage of votes each candidate won 
 # 4. The total number of votes each candidate won 
 # 5. The winner of the election based on popular vote 
 
 # close file 
+
  

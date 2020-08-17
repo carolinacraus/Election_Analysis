@@ -27,7 +27,8 @@ winning_count = 0
 winning_percentage = 0
 
 # 2: Track the largest county and county voter turnout.
-
+largest_county = ""
+county_turnout = 0 
 
 
 # Read the csv and convert it into a list of dictionaries
@@ -126,9 +127,9 @@ with open(file_to_save, "w") as txt_file:
         txt_file.write(candidate_results)
 
         # Determine winning vote count, winning percentage, and candidate.
-        if (votes > winning_count) and (vote_percentage > winning_percentage):
+        if (candidate_votes[2] > winning_count) and (candidate_votes[1] > winning_percentage):
             winning_count = votes
-            winning_candidate = candidate_name
+            winning_candidate = candidate_votes[0] 
             winning_percentage = vote_percentage
 
     # Print the winning candidate (to terminal)
